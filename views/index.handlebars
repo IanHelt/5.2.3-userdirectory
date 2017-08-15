@@ -1,0 +1,17 @@
+<h1>Index</h1>
+
+<div class="container">
+{{#each item}}
+  <div class="users">
+
+    <a href='/profile/{{id}}'><img src="{{avatar}}" alt="no image provided"></a>
+    <br>
+    <a href='/profile/{{id}}'>{{name}}</a>
+    {{#if job}}
+    <p>{{job}} at {{company}}</p>
+    {{else}}
+    <p class='for-hire'>Available for Hire</p>
+    {{/if}}
+  </div>
+  {{/each}}
+</div>

@@ -1,0 +1,111 @@
+
+body{
+  height: 100%;
+  width: 100%;
+  font-family: helvetica;
+}
+
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  width: 95%;
+  margin: auto;
+  justify-content: center;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+h2{
+  color: rgb(150,0,0);
+}
+.users{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgba(0,0,0, .3);
+  margin: .5%;
+  padding: 0 1%;
+  color: rgba(0,0,0, .6);
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.users a{
+  font-size: 175%;
+  color: rgb(0,100,175);
+  text-decoration-line: none;
+}
+
+.users a img{
+  position: relative;
+  left: 20%;
+}
+
+.for-hire{
+  color: rgb(215,80,0);
+}
+
+.profile{
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+.profile-bio{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  color: rgba(0,0,0, .75);
+  font-size: 110%;
+  margin: auto;
+}
+
+.profile-page-image{
+  border-style: solid;
+  border-radius: 180px;
+  border-width: thin;
+  border-color: rgba(0,0,0, .3);
+  height: 50%;
+  margin-right: 2%;
+  padding: 1%;
+}
+
+.profile-bio h1{
+  text-align: left;
+}
+
+.profile-user-info{
+  margin-bottom: 9%;
+}
+
+.education{
+  position: relative;
+  left: -27%;
+  font-weight: bold;
+  font-size: 130%;
+  color: rgba(0,0,0, .8);
+}
+
+.skills{
+  position: relative;
+  left: -19%;
+  font-weight: bold;
+  font-size: 130%;
+  color: rgba(0,0,0, .8);
+}
+
+.university{
+  position: relative;
+  top: -10.5%;
+}
+
+.skill-list{
+  position: relative;
+  top: -12%;
+  left: -8%;
+  list-style: none;
+}

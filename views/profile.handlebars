@@ -1,0 +1,35 @@
+
+
+<div class="profile">
+  <div class="profile-bio">
+  <img class="profile-page-image" src="{{item.avatar}}" alt="no image provided">
+  <div class="profile-text-content">
+    <div class="profile-user-info">
+
+  <h1>{{item.name}}</h1>
+  <p>
+    {{#if item.address.city}} {{item.address.city}}, {{item.address.country}}
+    {{else}} {{item.address.country}} {{/if}} |
+     {{#if item.job}} {{item.job}}, {{item.company}}
+     {{else}} Available for Hire {{/if}} | {{item.email}} | {{item.phone}}
+  </p>
+
+    </div>
+  {{#if item.university}}
+  <label class="education">Education</label><p class="university">{{item.university}}</p>
+  <label class="skills">Skills</label>
+  <ul class='skill-list'>
+     {{#each item.skills}}
+      <li> {{this}} </li>
+      {{/each}}
+    </ul>
+  {{else}}
+  <label class="skills">Skills</label><ul class='skill-list'>
+     {{#each item.skills}}
+      <li> {{this}} </li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>
+</div>
+</div>
